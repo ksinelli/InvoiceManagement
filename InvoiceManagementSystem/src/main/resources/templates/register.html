@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>KS Invoice Management System</title>
+</head>
+<body>
+<h1>Registration</h1>
+<br>
+<form th:action="@{/register/save}"  method="POST">
+	<div>
+		<label>Create a User Name</label>
+	</div>
+	<input type="text" name="username">
+	<br>
+	<br>
+	<div>
+		<label>Create a Password</label>
+	</div>
+	<input type="text" name="password">
+	<br>
+	<br>
+	<input type="submit" value="Submit">
+	<br>
+</form>
+<br>
+<a href="/login">Return to Login</a>
+
+</body>
+</html>

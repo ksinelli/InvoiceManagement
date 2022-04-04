@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>KS Invoice Management System</title>
+</head>
+<body>
+<p>
+<form action = "/complete" method = "post">
+	<label for ="invNumber">Invoice Number:</label><br>
+	<input type = "text" id = "invNumber" name = "invNumber"><br>
+	<label for ="invDate">Invoice Date:</label><br>
+	<input type = "text" id = "invDate" name = "invDate"><br>
+	<label for ="invAmount">Invoice Amount:</label><br>
+	<input type = "text" id = "invAmount" name = "invAmount"><br>
+	<label for ="dueDate">Due Date:</label><br>
+	<input type = "text" id = "dueDate" name = "dueDate"><br>
+	<label for ="discountAvailable">Discount Available?</label><br>
+	<input type = "checkbox" id = "discountAvailable" name = "discountAvailable"><br>
+	<label for ="lastDayToPayForDiscount">Last Day To Pay For Discount:</label><br>
+	<input type = "text" id = "lastDayToPayForDiscount" name = "lastDayToPayForDiscount"><br>
+	<input type = "Submit">
+</form>
+</p>
+</body>
+</html>
